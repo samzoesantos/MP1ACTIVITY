@@ -1,0 +1,235 @@
+/* General body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+header {
+    background-color: rgb(240,220,100);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header h1 element styling */
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+/* Header h2 element styling */
+header h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* Styling for light navbar */
+.navbar-light.bg-light {
+    background-color: rgb(207, 182, 43) !important;
+}
+
+/* Row styling for center alignment */
+.row {
+    justify-content: center;
+}
+
+/* Column layout styling */
+.col-lg-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Accordion button styling */
+.accordion-button {
+    background-color: rgb(240,220,100);
+    color: white;
+}
+
+/* Accordion button styling when not collapsed */
+.accordion-button:not(.collapsed) {
+    background-color: rgb(207, 182, 43);
+    color: white;
+}
+
+/* Accordion body paragraph styling */
+.accordion-body p {
+    text-align: justify;
+    margin-bottom: 15px; 
+}
+
+/* Content wrapper styling */
+.content-wrapper, .main-content {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(240,220,100, 0.5);
+}
+
+/* Styling for images within the 'what-we-do-photo' and 'carousel-img' classes */
+.what-we-do-photo img, .carousel-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main content paragraph styling */
+.main-content p {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: rgb(207, 182, 43);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Logo styling */
+#logo {
+    width: 100px;
+}
+
+/* Carousel indicator button styling */
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+/* Carousel image styling */
+.carousel-img {
+    height: 500px;
+    object-fit: cover; 
+}
+
+/* Donation container styling */
+.donation-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Donation header button styling */
+.donation-header button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #e7e7e7;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Active state styling for donation header buttons */
+.donation-header button.active {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Donation grid layout styling */
+.donation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px 0;
+}
+
+/* Donation option styling */
+.donation-option {
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Custom donation section styling */
+.custom-donation {
+    margin-top: 20px;
+}
+
+/* Continue button styling */
+.btn-continue {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Input styling for number type */
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+/* Responsive image styling */
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;      
+    margin-left: auto;   
+    margin-right: auto;  
+}
+
+/* Media query for max-width 640px */
+@media only screen and (max-width: 640px) {
+    .responsive-image {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
+/* Media query for max-width 768px */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+    .col-lg-8 {
+        padding: 10px; 
+    }
+    .main-content p, .accordion-body p {
+        max-width: 100%;
+    }
+    .carousel-img {
+        height: auto;
+    }
+    .donation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for max-width 375px */
+@media screen and (max-width: 375px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header h2 {
+        font-size: 1rem;
+    }
+    .content-wrapper, .main-content {
+        margin: 10px; 
+        padding: 10px;
+    }
+
+    .donation-grid {
+        grid-template-columns: 1fr; 
+    }
+    .btn-continue, .donation-header button {
+        padding: 8px 15px;
+    }
+}
