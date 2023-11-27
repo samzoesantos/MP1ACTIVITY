@@ -246,3 +246,29 @@ input[type="number"] {
         padding: 8px 15px;
     }
 }
+
+/* CSS for smaller social media icons */
+.social-icon {
+    width: 20px; 
+    height: auto;
+}
+
+/* Media query for iPhone SE */
+@media only screen and (max-width: 640px) { 
+    .footer .col-md-4 {
+      
+    }
+    .footer .social-icon {
+        width: 15px;
+    }
+}
+
+/* Media query for iPad Air */
+@media only screen and (max-width: 768px) { 
+    .footer .col-md-4 {
+      
+    }
+    .footer .social-icon {
+        width: 18px; 
+    }
+}
